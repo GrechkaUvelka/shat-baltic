@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Didact Gothic', sans-serif;
+}
+body {
+  background: url({% static 'bg.jpg' %});
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+a:hover {
+  border-bottom: 2px solid rgba(3,185,168);
+  border-top: 2px solid rgba(3,185,168);
+}
+.title {
+  background-color: #F8D1BA;
+  height: 80px;
+  max-height: 90px;
+  vertical-align: text-top;
+  position: relative;
+}
+.title-text {
+  position: relative;
+  height: 100%;
+  max-height: 90px;
+  width: 350px;
+  background-color: #442525;
+  color: #F8D1BA;
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 10%;
+  vertical-align: text-top;
+  padding-left: 30px;
+}
+img {
+  width: 48%;
+  height: auto;
+  display: inline-block;
+  margin: 5px;
+}
+label {
+  cursor: pointer;
+  padding: 5px;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(101,101,101,.34);
+  text-align: center;
+}
+header div {
+  padding: 1em;
+}
+
+.dg {
+  background-color: #F9D2BA;
+  color: #0D2030;
+}
+.dg div:last-child {
+  text-align: right;
+}
+.lg div:last-child{
+  text-align: right;
+}
+.dg div:first-child {
+  min-width: 450px;
+}
+.lg div:first-child{
+  min-width: 450px;
+}
+
+
+.menu {
+  height: 1215px;
+}
+.about {
+  height: auto;
+}
+
+.center_box {
+  grid-column: 1/5;
+  min-height: 10px;
+  font-size: 3em;
+  color:  #F9D1B9;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.center_box div {
+  font-size: 20px;
+  text-align: center;
+}
+.top_incl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3em;
+}
+
+.description_photo {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-gap: 1em;
+  width: 96.3%;
+  margin: 1em;
+  font-size: 25px
+}
+
+.description_photo div:not(.photo_item) {
+    background-color: rgba(101,101,101,.34);
+    border-radius: 10px;
+    padding: 1em;
+    color: #F9CBBA;
+}
+
+.about section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #F8D1BA;
+}
+
+.about input {
+  display: none;
+}
+
+.about label {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #F8D1BA;
+  border: 2px solid transparent;
+}
+
+
+.about input:checked + label {
+  color: #F8D1BA;
+  border: 2px solid #F8D1BA;
+  border-bottom: 2px solid #0d2031;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+
+
+.menu_left_column {
+  background-color: #0d2031;
+  color: #F9CAB9;
+}
+.menu_left_column nav {
+  margin: 1em;
+  font-size: 25px;
+}
+
+
+li {
+  list-style: none;
+  padding: 5px 15px;
+}
+.menu_paragraph {
+  display: inline;
+}
+.hiden_menu {
+  background-color: #0d2031;
+  display: none;
+  width: 100%;
+  min-width: 500px;
+  position: relative;
+}
+.menu input[type="radio"] {
+  visibility: hidden;
+}
+#tab_1:checked ~ #h1,
+#tab_2:checked ~ #h2,
+#tab_3:checked ~ #h3,
+#tab_4:checked ~ #h4,
+#tab_5:checked ~ #h5,
+#tab_6:checked ~ #h6,
+#tab_7:checked ~ #h7,
+#tab_8:checked ~ #h8,
+#tab_9:checked ~ #h9 {
+  display: block;
+}
+
+.hiden_menu li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#tab_1:checked ~ label[for="tab_1"],
+#tab_2:checked ~ label[for="tab_2"],
+#tab_3:checked ~ label[for="tab_3"],
+#tab_4:checked ~ label[for="tab_4"],
+#tab_5:checked ~ label[for="tab_5"],
+#tab_6:checked ~ label[for="tab_6"],
+#tab_7:checked ~ label[for="tab_7"],
+#tab_8:checked ~ label[for="tab_8"],
+#tab_9:checked ~ label[for="tab_9"] {
+  background-color: #220B0B;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.menu label:hover    {
+  background-color: rgba(34,11,11,.45);
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(101,101,101,.34);
+}
+.reserve input {
+  border-radius: 7px;
+  border: 3px solid #0D2030;
+  outline: none;
+  width: 90%;
+  height: 40px;
+  font-size: 25px;
+  margin: 5px;
+}
+.reserve label {
+  font-size: 25px;
+  color: #F8D1BA;
+}
+input[type="submit"] {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #F8D1BA;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px 0;
+}
+i {
+  margin-right: 15px;
+}
+
+
+
+@media screen and (max-width: 1550px) {
+  .menu {
+    height: 1300px;
+  }
+
+@media screen and (max-width: 1220px) {
+  img {
+    width: 45%;
+  }

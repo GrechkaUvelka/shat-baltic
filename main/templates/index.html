@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Кафе Шатер</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="кафе, кафе калининград, шатер, шатер калининград">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
+  <style media="screen">
+    body {
+      background: url({% static 'bg.jpg' %});
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .title {
+      background: url({% static 'ground.png' %})
+    }
+    .title-text {
+      background: url({% static 'dline.png' %})
+    }
+    footer {
+      background: url({% static 'dline.png' %})
+    }
+  </style>
+  <body>
+    <header>
+      <div class="center_box">
+        <div class="top_incl">
+          <div class="l">Калининград</div>
+          <div class="l">ул. Динамо 8</div>
+          <div class="l"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=shatbaltic39@gmail.com" style="color: #F9D1B9">Почта</a></div>
+        </div>
+        <h1>Кафе Шатер</h1>
+      </div>
+      <div class="bot_col2 text_center">
+        <a href="#menuanc">Меню</a>
+      </div>
+      <div class="bot_col3 text_center">
+        <a href="#reserveanc">Бронирование</a>
+      </div>
+      <div class="bot_col4 text_center">
+        <a href="#reserveanc">Контакты</a>
+      </div>
+    </header>
+    <hr color="brown">
+    <main>
+      <article class="about">
+        <div class="title">
+          <div class="title-text">
+            О кафе
+          </div>
+        </div>
+          <div class="description_photo">
+            <div class="photos">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1">Кафе</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2">Блюда</label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3">Банкет</label>
+
+                <input id="tab4" type="radio" name="tabs">
+                <label for="tab4">Карта</label>
+
+                <section id="content1">
+                  <img src="{% static '1.jpg' %}" alt="">
+                  <img src="{% static '2.jpg' %}" alt="">
+                  <img src="{% static '3.jpg' %}" alt="">
+                  <img src="{% static '4.jpg' %}" alt="">
+                </section>
+
+                <section id="content2">
+                  <img src="{% static '5.jpg' %}" alt="">
+                  <img src="{% static '6.jpg' %}" alt="">
+                  <img src="{% static '7.jpg' %}" alt="">
+                  <img src="{% static '8.jpg' %}" alt="">
+                </section>
+
+                <section id="content3">
+                  <img src="{% static '9.jpg' %}" alt="">
+                  <img src="{% static '10.jpg' %}" alt="">
+                  <img src="{% static '11.jpg' %}" alt="">
+                  <img src="{% static '12.jpg' %}" alt="">
+                </section>
+
+                <section id="content4">
+                  <iframe src="https://yandex.ru/map-widget/v1/-/CBut78snTA" width="98%" height="700px" frameborder="1" allowfullscreen="true"></iframe>
+                </section>
+              </div>
+              <div class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis molestiae doloremque magni provident fugit beatae dolorem! Ab minus possimus sit animi ipsa iste enim, nesciunt vero illo praesentium! Rerum fugiat neque quis voluptate iure quibusdam amet rem tenetur adipisci ipsum voluptatum modi error vero molestias incidunt nemo consequatur, fuga aspernatur quidem. Commodi voluptatum illum iure, amet obcaecati ratione ad ipsam voluptates explicabo. Dicta commodi aliquam sit iusto. Vero cum, harum voluptate aliquid eum praesentium, quod. Ad, praesentium maiores. Veniam voluptas molestias nostrum, ipsum accusantium molestiae, impedit illum nihil eius expedita, et esse repellat maxime minus aliquam magni ipsa. Deleniti, consequuntur.
+              </div>
+            </div>
+      </article>
+      <article class="menu" id="menuanc">
+        <section class="menu_left_column">
+          <div class="title">
+            <div class="title-text">
+              Меню
+            </div>
+          </div>
+          <nav class="menu_nav">
+            <input type="radio" name="inset" value="" id="tab_1" checked>
+            <label for="tab_1">Шашлыки</label>
+
+            <input type="radio" name="inset" value="" id="tab_2">
+            <label for="tab_2">Первые блюда</label>
+
+            <input type="radio" name="inset" value="" id="tab_3">
+            <label for="tab_3">Вторые блюда</label>
+
+            <input type="radio" name="inset" value="" id="tab_4">
+            <label for="tab_4">Блюда из рыбы</label>
+
+            <input type="radio" name="inset" value="" id="tab_5">
+            <label for="tab_5">Салаты морские</label>
+
+            <input type="radio" name="inset" value="" id="tab_6">
+            <label for="tab_6">Гарниры</label>
+
+            <input type="radio" name="inset" value="" id="tab_7">
+            <label for="tab_7">Дессерты</label>
+
+            <input type="radio" name="inset" value="" id="tab_8">
+            <label for="tab_8">Алкоголь</label>
+
+            <input type="radio" name="inset" value="" id="tab_9">
+            <label for="tab_9">Закуски</label>
+
+            <ul class="hiden_menu" id="h1">
+                  <li class="dg"><div>Шашлык из свинины</div><div>(250г) 300р</div></li>
+                  <li class="lg"><div>Стейк из свинины</div><div>(250г) 350р</div></li>
+                  <li class="dg"><div>Свиные ребрышки</div><div>(300г) 350р</div></li>
+                  <li class="lg"><div>Шашлык из баранины</div><div>(250г) 500р</div></li>
+                  <li class="dg"><div>Каре барана</div><div>(350г) 500р</div></li>
+                  <li class="lg"><div>Каре ягненка с запеченными овощами</div><div>(350/150г) 750р</div></li>
+                  <li class="dg"><div>Шашлык из курицы</div><div>(250г) 280р</div></li>
+                  <li class="lg"><div>Шашлык из куриных сердечек</div><div>(250г) 280р</div></div></li>
+                  <li class="dg"><div>Шашлык "Трио" (свинина, курица, семга)</div><div>(360г) 450р</div></li>
+                  <li class="lg"><div>Люля-кебаб из курицы</div><div>(250г) 300р</div></li>
+                  <li class="dg"><div>Люля-кебаб из свинины</div><div>(250г) 300р</div></li>
+                  <li class="lg"><div>Люля-кебаб из телятины</div><div>(250г) 350р</div></li>
+                  <li class="dg"><div>Люля-кебаб из баранины</div><div>(250г) 350р</div></li>
+                  <li class="lg"><div>Стейк из семги</div><div>(250г) 500р</div></li>
+                  <li class="dg"><div>Шашлык из семги</div><div>(250г) 350р</div></li>
+                  <li class="lg"><div>Шашлык из судака</div><div>(250г) 500р</div></li>
+                  <li class="dg"><div>Шашлык "Дуэт" (семга, судак)</div><div>(250г) 350р</div></li>
+                  <li class="lg"><div>Рыбное трио (семга, судак, креветки)</div><div>(250г) 500р</div></li>
+                  <li class="dg"><div>Шашлык из угря</div><div>(200г) 800р</div></li>
+                  <li class="lg"><div>Форель с мангала</div><div>(350г) 450р</div></li>
+                  <li class="dg"><div>Дорада с мангала</div><div>(400г) 500р</div></li>
+                  <li class="lg"><div>Сибас с мангала</div><div>(400г) 500р</div></li>
+                  <li class="dg"><div>Овощи с мангала (болгар. перец, цукини, баклажан, помидор)</div><div>(200г) 250р</li>
+                  <li class="lg"><div>Ассорти (свинина, курица, свинина на косточке, каре барана, люля-кебаб из телятины, люля-кебаб из свинины)</div><div>(400г) 500р</div></li>
+                </ul>
+            <ul class="hiden_menu" id="h2">
+                  <li class="dg"><div>Солянка мясная</div><div>(300/20г) 200р</div></li>
+                  <li class="lg"><div>Харчо с бараниной</div><div>(350г) 250р</div></li>
+                  <li class="dg"><div>Шурпа из баранины</div><div>(350г) 250р</div></li>
+                  <li class="lg"><div>Лагман</div><div>(350г) 280р</div></li>
+                  <li class="dg"><div>Крем-суп из белых грибов</div><div>(300/10г) 200р</div></li>
+                  <li class="lg"><div>Крем-суп сырный</div><div>(300/10г) 200р</div></li>
+                  <li class="dg"><div>Литовский холодный борщ</div><div>(300/10г) 180р</div></li>
+                  <li class="lg"><div>Окрошка на кефире</div><div>(300г) 180р</div></li>
+                  <li class="dg"><div>Окрошка на квасе</div><div>(300г) 180р</div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                </ul>
+            <ul class="hiden_menu" id="h3">
+                  <li class="dg"><div>Лагман жареный</div><div>(350г) 300р</div></li>
+                  <li class="lg"><div>Стейк из свинины</div><div>(250г) 350р</div></li>
+                  <li class="dg"><div>Лагман жареный с бараниной</div><div>(350г) 350р</div></li>
+                  <li class="lg"><div>Манты</div><div>(300/50г) 300р</div></li>
+                  <li class="dg"><div>Манты жареные</div><div>(300/50г) 320р</div></li>
+                  <li class="lg"><div>Манты с бараниной</div><div>(300/50г) 350р</div></li>
+                  <li class="dg"><div>Манты жареные с бараниной</div><div>(300/50г) 370р</div></li>
+                  <li class="lg"><div>Долма(виноградный лист, телятина, рис)</div><div>(250/50г) 300р</div></div></li>
+                  <li class="dg"><div>Гампан(свинина с тушеными овощами и рисом)</div><div>(350г) 250р</div></li>
+                  <li class="lg"><div>Плов со свининой и свежим салатом</div><div>(300/100г) 250р</div></li>
+                  <li class="dg"><div>Плов с бараниной и свежим салатом</div><div>(300/100г) 300р</div></li>
+                  <li class="lg"><div>Баранина "по-царски"(ребрышки тушеные с овощами)</div><div>(400г) 450р</div></li>
+                  <li class="dg"><div>Пельмени по-домашнему(со сметаной)</div><div>(300/50г) 220р</div></li>
+                  <li class="lg"><div>Свинина с грибным соусом</div><div>(200/100г) 300р</div></li>
+                  <li class="dg"><div>Стейк из свинины с грибным соусом</div><div>(200/100г) 350р</div></li>
+                  <li class="lg"><div>Котлета из курицы</div><div>(250г) 250р</div></li>
+                  <li class="dg"><div>Крылья куриные в панировке</div><div>(250г) 250р</div></li>
+                  <li class="lg"><div>Котлеты из телятины с картофельным пюре</div><div>(250/150г) 330р</div></li>
+                  <li class="dg"><div>Куриная грудка в панировке</div><div>.</div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                </ul>
+            <ul class="hiden_menu" id="h4">
+                  <li class="dg"><div>Судак с креветками под сливочным соусом</div><div>(250/75г) 400р</div></li>
+                  <li class="lg"><div>Судак с грибным соусом</div><div>(250/75г) 380р</div></li>
+                  <li class="dg"><div>Судак под шубой(помидоры, сыр, грибы)</div><div>(250/150г) 420р</div></li>
+                  <li class="lg"><div>Стейк из семги с овощами гриль</div><div>(250/150г) 420р</div></li>
+                  <li class="dg"><div>Форель с грибами</div><div>(400/100г) 550р</div></li>
+                  <li class="lg"><div>Угорь с гриля</div><div>(250/150г) 800р</div></li>
+                  <li class="dg"><div>Дорада с овощами, с гриля</div><div>(350/200г) 700р</div></li>
+                  <li class="lg"><div>Сибас с овощами, с гриля</div><div>(350/200г) 700р</div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+            </ul>
+            <ul class="hiden_menu" id="h5">
+                  <li class="dg"><div>Салат "Бора-бора"(авокадо, лист салата, креветки, олив. масло)</div><div>(200г) 300р</div></li>
+                  <li class="lg"><div>Салат с креветками(креветки, помидор, огурец, маслины, лист салата, олив. масло)</div><div>(220г) 250р</div></li>
+                  <li class="dg"><div>Салат из кальмаров(кальмар, краб. палочки, яйцо, огурец, зел. горошек, майонез)</div><div>(250г) 280р</div></li>
+                  <li class="lg"><div>Авокадо с креветками</div><div>(200г) 280р</div></li>
+                  <li class="dg"><div>Авокадо с семгой</div><div>(200г) 280р</div></li>
+                  <li class="lg"><div>Салат "Гнездо глухаря"(кальмар, кур. филе, яйцо, огурец, лист салата, картофель пай)</div><div>(250г) 280р</div></li>
+                  <li class="dg"><div>Салат с семгой(семга с/с, креветки, помидор, болгар. перец, лист салата, заправка)</div><div>(230г) 280р</div></li>
+                  <li class="lg"><div>Салат "Морской"(семга слабосоленая, кальмар, яйцо, сыр, лист салата, майонез)</div><div>(230г) 300р</div></li>
+                  <li class="dg"><div>Сотэ из кальмаров(кальмар, перец болгар., баклажан обжаренный, огурец, помидор, заправка)</div><div>(250г) 300р</div></li>
+                  <li class="lg"><div>Салат "Цезарь" с креветками</div><div>(250г) 300р</div></li>
+                  <li class="dg"><div>Салат "Цезарь" с семгой</div><div>(250г) 300р</div></li>
+                  <li class="lg"><div>Салат "Цезарь" с тунцом</div><div>(250г) 300</div></li>
+                  <li class="dg"><div>Салат "Нептун"(креветки, кальмар, краб. палочки, яйцо, красная икра, майонез)</div><div>(200г) 320р</div></li>
+                  <li class="lg"><div>Коктейль из морепродуктов(теплый)(мидии, креветки, кальмары, гребешки, осьминожки, болгар. перец)</div><div>(250г) 350р</div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+            </ul>
+            <ul class="hiden_menu" id="h6">
+                  <li class="dg"><div>Фри</div><div>(150г) 100р</div></li>
+                  <li class="lg"><div>Картофельные дольки</div><div>(150г) 100р</div></li>
+                  <li class="dg"><div>Картофельное пюре</div><div>(150г) 100р</div></li>
+                  <li class="lg"><div>Фасоль стручковая</div><div>(150г) 100р</div></li>
+                  <li class="dg"><div>Рис отварной</div><div>(150г) 100р</div></li>
+                  <li class="lg"><div>Свежие овощи</div><div>(150г) 100р</div></li>
+                  <li class="dg"><div>Овощи гриль</div><div>(200г) 250р</div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+            </ul>
+            <ul class="hiden_menu" id="h7">
+                  <li class="dg"><div>"Банан"(банановое мороженое, кукурызные хлопья, взбитые сливки)</div><div>(200г) 250р</div></li>
+                  <li class="lg"><div>"Ночка"(чернослив, грецкий орех, мороженое, взбитые сливки)</div><div>(200г) 250р</div></li>
+                  <li class="dg"><div>"Летний"(мороженое, виноград, мятный сироп, взбитые сливки)</div><div>(200г) 250р</div></li>
+                  <li class="lg"><div>"Малибу"(мороженое, кокосовый сироп, взбитые сливки, кокосовая стружка)</div><div>(200г) 250р</div></li>
+                  <li class="dg"><div>Венские вафли со взбитыми сливками</div><div>(150г) 180р</div></li>
+                  <li class="lg"><div>Пироженое</div><div>(180г) 200р</div></li>
+                  <li class="dg"><div>Блины с начинкой и с шариком мороженного</div><div>(200г) 200р</div></li>
+                  <li class="lg"><div>Молочный коктейль с ванильным мороженым</div><div>(0,4л) 170р</div></div></li>
+                  <li class="dg"><div>Молочный коктейль с банановым мороженым</div><div>(0,4л) 170р</div></li>
+                  <li class="lg"><div>Молочный коктейль с клубничным мороженым</div><div>(0,4л) 170р</div></li>
+                  <li class="dg"><div>Молочный коктейль с шоколадным мороженым</div><div>(0,4л) 170р</div></li>
+                  <li class="lg"><div>Клубничное мороженое</div><div>(150г) 180р</div></li>
+                  <li class="dg"><div>Шоколадное мороженое</div><div>(150г) 180р</div></li>
+                  <li class="lg"><div>Ванильное мороженое</div><div>(150г) 180р</div></li>
+                  <li class="dg"><div>Банановое мороженое</div><div>(150г) 180р</div></li>
+                  <li class="lg"><div>Мороженое "Лакомка"(сгущенное молоко, грецкий орех)</div><div>(170г) 220р</div></li>
+                  <li class="dg"><div>Ассорти(ванильное, клубничное, шоколадное)</div><div>(150г) 180р</div></li>
+                  <li class="lg"><div>Варенье к мороженому</div><div>(30г) 50р</div></li>
+                  <li class="dg"><div>Взбитые сливки</div><div>(20г) 50р</div></li>
+                  <li class="lg"><div>"Сладкая ваза"</div><div>180р</div></li>
+                  <li class="dg"><div>Шоколад(Shogetten)</div><div>150р</div></li>
+                  <li class="lg"><div>Мед/варенье к чаю</div><div>120р</div></li>
+                  <li class="dg"><div>.</div><div></div></li>
+                  <li class="lg"><div>.</div><div></div></li>
+                </ul>
+            <ul class="hiden_menu" id="h8">
+                  <li class="dg"><div><b>ВОДКА</div><div>100мл  500мл</b></div></li>
+                  <li class="lg"><div>Беленькая</div><div>140р  700р</div></li>
+                  <li class="dg"><div>Пять озер</div><div>140р  700р</div></li>
+                  <li class="lg"><div>Путинка</div><div>150р  750р</div></li>
+                  <li class="dg"><div>Парламент</div><div>160р  800р</div></li>
+                  <li class="lg"><div>Немирофф(горилка, мед/перец)</div><div>160р 800р</div></li>
+                  <li class="dg"><div>Хортица</div><div>160р  800р</div></li>
+                  <li class="lg"><div><b>Коньяк</div><div>50мл 100мл</b></div></li>
+                  <li class="dg"><div>Старый Кенигсберг</div><div>140р  280р</div></li>
+                  <li class="lg"><div>Арарат 3*(Армения)</div><div>140р 280р</div></li>
+                  <li class="dg"><div>Арараг 5*(Армения)</div><div>160р  320р</div></li>
+                  <li class="lg"><div>Метакса 5*(Греция)</div><div>180р  360р</div></li>
+                  <li class="dg"><div>Хеннеси vs(Франция)</div><div>300р  600р</div></li>
+                  <li class="lg"><div><b>Виски</div><div>50мл  100мл</b></div></li>
+                  <li class="dg"><div>Уайт хорс(Великобритания)</div><div>150р  300р</div></li>
+                  <li class="lg"><div>Баллантайн(Шотландия)</div><div>200р  400р</div></li>
+                  <li class="dg"><div>Джек Дэниелс(США)</div><div>250р  500р</div></li>
+                  <li class="lg"><div><b>Ром</div><div>50мл  100мл</b></div></li>
+                  <li class="dg"><div>Барсело бланко(белый)(Доминикана)</div><div>180р  360р</div></li>
+                  <li class="lg"><div>Барсело аньехо(темный)</div><div>200р  400р</div></li>
+                  <li class="dg"><div><b>Текила</div><div>50мл 100мл</b></div></li>
+                  <li class="lg"><div>Сиерра сильвер</div><div>150р</div></li>
+                  <li class="dg"><div>Сиерра репосадо</div><div>170р</div></li>
+                  <li class="lg"><div><b>Ликер</div><div>50мл 100мл</b></div></li>
+                  <li class="dg"><div>Егермейстер(Германия)</div><div>200р 400р</div></li>
+                </ul>
+            <ul class="hiden_menu" id="h9">
+                      <li class="dg"><div>Язык с хреном</div><div>(100/30г) 250р</div></li>
+                      <li class="lg"><div>Сало по-домашнему с горчицей</div><div>(100/30г) 150р</div></li>
+                      <li class="dg"><div>Семга слабосоленая</div><div>(100/20г) 300р</div></li>
+                      <li class="lg"><div>Строганиа из семги</div><div>(100/50г) 350р</div></li>
+                      <li class="dg"><div>Сельдь в масле</div><div>(100/30г) 150р</div></li>
+                      <li class="lg"><div>Сельдь по-русски с картофелем</div><div>(100/100г) 200р</div></li>
+                      <li class="dg"><div>Сырная тарелка</div><div>(250г) 450р</div></li>
+                      <li class="lg"><div>Мясная тарелка(салями, баструма, язык отв., окорок св., соус Цезарь)</div><div>(300г) 600р</div></div></li>
+                      <li class="dg"><div>Овощное ассорти с сыром фета</div><div>(200/50г) 300р</div></li>
+                      <li class="lg"><div>Ароматная зелень с брынзой</div><div>(150г) 250р</div></li>
+                      <li class="dg"><div>Язык "По-царски"(язык, помидор, зелень, тертый сыр, майонез)</div><div>(100/100г) 350р</div></li>
+                      <li class="lg"><div>Баструма(вяленая говядина)</div><div>(100г) 250р</div></li>
+                      <li class="dg"><div>"Закуска к водке"(сельдь, маринованый огурец, сало, квашенная капуста)</div><div>(150г) 180р</div></li>
+                      <li class="lg"><div>Закуска из кадушки(квашенная капуста, маринованый огурец,помидоры,грибы ,стручковый перец, чеснок)</div><div>(300г) 300р</div></li>
+                      <li class="dg"><div>Рулетики из баклажанов(помидор, сыр фета, зелень, чсенок)</div><div>(250г) 300р</div></li>
+                      <li class="lg"><div>.</div><div>.</div></li>
+                      <li class="dg"><div>.</div><div>.</div></li>
+                      <li class="lg"><div>.</div><div>.</div></li>
+                      <li class="dg"><div>.</div><div>.</div></li>
+                      <li class="lg"><div>.</div><div></div></li>
+                      <li class="dg"><div>.</div><div></div></li>
+                      <li class="lg"><div>.</div><div></div></li>
+                    </ul>
+          </nav>
+        </section>
+      </article>
+      <article class="reserve" id="reserveanc">
+        <div class="title">
+          <div class="title-text">
+            Бронирование
+          </div>
+        </div>
+        <form class="" action="/main/" method="post">{% csrf_token %}
+          <div class="inputs">
+            <div class="input_grid1">
+              <label for="s_name">Фамилия</label><br>
+              <input type="text" name="s_name" id="s_name"><br>
+              <label for="name">Имя</label><br>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="input_grid2">
+              <label for="tel">Телефон</label><br>
+              <input type="text" name="tel" id="tel"><br>
+              <label for="date">Дата</label><br>
+              <input type="date" name="date" id="date">
+            </div>
+            <div class="input_grid3">
+              <label for="time">Время</label><br>
+              <input type="time" name="time" id="time"><br>
+              <label for="num">Кол-во гостей</label><br>
+              <input type="number" name="num" id="num">
+            </div>
+            <div class="input_grid4">
+              <label for="e-mail">e-mail</label><br>
+              <input type="email" name="email" value="" id="e-mail"><br>
+              <label></label><br>
+              <input type="submit" name="submit" value="Забронировать">
+            </div>
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <div>*Меню представлено не полностью</div>
+      <div><a href="https://vk.com/timofey.nenashev"><i class="fab fa-vk"></i>Дизайн</a></div>
+      <div><a href="https://www.instagram.com/shatbaltic39/"><i class="fab fa-instagram"></i>Instagram</a></div>
+    </footer>
+  </body>
+</html>
