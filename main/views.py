@@ -20,7 +20,7 @@ def send(request):
 
     if s_name and name and tel and email:
         body = s_name + " " + name + "\nТелефон: " + tel + "\nДата и время " + date + " " + time + "\n" + "Количество человек: " + num + "\nПочта: " + email
-        send_mail('Бронирование', body, email, ["shatbaltic39@gmail.com"], fail_silently=False)
+        send_mail('Бронирование', body, email, ["shatbaltic39@gmail.com", "nenashev.t@mail.ru"], fail_silently=True)
         return render(request, 'success.html')
     else:
         return render(request, "fail.html")
