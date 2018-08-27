@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '_dg+x*q6bu*n^$xjngy%%if^)-i%ki
 #DEBUG = False
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', False) )
 
-ALLOWED_HOSTS = ["shat-baltic.herokuapp.com", ,'127.0.0.1']
+ALLOWED_HOSTS = ["shat-baltic.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
