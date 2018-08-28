@@ -23,8 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'eu09(ilk6@4sfdofb=b_2ht@vad*$ehh9-)3u_83+y%(+phh&=')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = bool( os.environ.get('DJANGO_DEBUG', " "))
-DEBUG = False
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
+#DEBUG = False
 
 ALLOWED_HOSTS = ["shat-baltic.herokuapp.com", "127.0.0.1"]
 
@@ -126,6 +126,6 @@ STATICFILES_DIRS = (
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', " ")
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', " ")
 EMAIL_USE_TLS = True
