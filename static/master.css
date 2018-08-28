@@ -16,7 +16,7 @@ a {
 a:hover {
   border-bottom: 2px solid rgba(3,185,168);
   border-top: 2px solid rgba(3,185,168);
-  transition-duration: .5s;
+  transition-duration: .3s;
 }
 .title {
   background-color: #F8D1BA;
@@ -138,6 +138,9 @@ header div {
   border: 2px solid transparent;
 }
 
+.about label:hover {
+  background-color: rgba(255,255,255,.3);
+}
 
 .about input:checked + label {
   color: #F8D1BA;
@@ -230,6 +233,12 @@ li {
   font-size: 25px;
   margin: 5px;
 }
+.reserve input:hover {
+  border: 3px solid #173A57;
+}
+.reserve input:focus {
+  border: 3px solid #173A57;
+}
 .reserve label {
   font-size: 25px;
   color: #F8D1BA;
@@ -240,6 +249,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   box-shadow: 5px 5px black;
+  transition-duration: .5s;
 }
 
 footer {
