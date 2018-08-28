@@ -139,7 +139,7 @@ header div {
 }
 
 .about label:hover {
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,.15);
 }
 
 .about input:checked + label {
@@ -234,10 +234,12 @@ li {
   margin: 5px;
 }
 .reserve input:hover {
-  border: 3px solid #173A57;
+  border: 3px solid #112B40;
+  transition-duration: .3s;
 }
 .reserve input:focus {
-  border: 3px solid #173A57;
+  border: 3px solid #1E4D74;
+  transition-duration: .3s;
 }
 .reserve label {
   font-size: 25px;
@@ -249,6 +251,12 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   box-shadow: 5px 5px black;
+  transition-duration: .5s;
+}
+input[type="submit"]:active {
+  box-shadow: 5px 5px black;
+  bottom: 5px;
+  right: 5px;
   transition-duration: .5s;
 }
 
