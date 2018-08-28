@@ -26,7 +26,7 @@ with open('restoran/secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', False) )
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = ["shat-baltic.herokuapp.com", "127.0.0.1"]
 
@@ -128,7 +128,7 @@ STATICFILES_DIRS = (
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "shatbaltic39@gmail.com"
+EMAIL_HOST_USER = "mmmmaslooo@gmail.com"
 with open('restoran/pfem.txt') as f:
     EMAIL_HOST_PASSWORD = f.read().strip()
 EMAIL_USE_TLS = True
