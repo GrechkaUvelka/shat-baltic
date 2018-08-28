@@ -128,5 +128,5 @@ STATICFILES_DIRS = (
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "mmmmaslooo@gmail.com"
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_H_PASSWORD', '0')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_H_PASSWORD', '')
 EMAIL_USE_TLS = True
