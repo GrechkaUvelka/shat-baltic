@@ -255,8 +255,6 @@ input[type="submit"]:hover {
 }
 input[type="submit"]:active {
   box-shadow: 5px 5px black;
-  margin-top: 5px;
-  margin-left: 5px;
   transition-duration: .5s;
 }
 
