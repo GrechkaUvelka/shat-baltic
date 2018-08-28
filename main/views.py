@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django import forms
 from django.core.mail import send_mail, BadHeaderError
-class ContactForm(forms.Form):
-    name = forms.CharField()
 
 
 def index(request):

@@ -140,6 +140,7 @@ header div {
 
 .about label:hover {
   background-color: rgba(255,255,255,.15);
+  transition-duration: .3s;
 }
 
 .about input:checked + label {
