@@ -22,8 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = '_dg+x*q6bu*n^$xjngy%%if^)-i%ki#%kmw%pdmwj2g5d3s0!u'
 
-with open('restoran/secret_key.txt') as f:
-    SECRET_KEY = f.read().strip()
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '_dg+x*q6bu*n^$xjngy%%if^)-i%ki#%kmw%pdmwj2g5d3s0!u')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
@@ -129,6 +128,5 @@ STATICFILES_DIRS = (
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "mmmmaslooo@gmail.com"
-with open('restoran/pfem.txt') as f:
-    EMAIL_HOST_PASSWORD = f.read().strip()
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_H_PASSWORD', '0')
 EMAIL_USE_TLS = True
