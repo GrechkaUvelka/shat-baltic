@@ -234,11 +234,11 @@ li {
   margin: 5px;
 }
 .reserve input:hover {
-  border: 3px solid #112B40;
+  border: 3px solid #1B4262;
   transition-duration: .3s;
 }
 .reserve input:focus {
-  border: 3px solid #1E4D74;
+  border: 3px solid #2D71A8;
   transition-duration: .3s;
 }
 .reserve label {
@@ -255,8 +255,8 @@ input[type="submit"]:hover {
 }
 input[type="submit"]:active {
   box-shadow: 5px 5px black;
-  bottom: 5px;
-  right: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
   transition-duration: .5s;
 }
 
