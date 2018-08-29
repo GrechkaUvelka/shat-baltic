@@ -16,7 +16,7 @@ def send(request):
     time = request.POST.get('time')
     num = request.POST.get('num')
 
-    if s_name and name and tel and email:
+    if s_name and name and tel and email and date and time and num:
         body = s_name + " " + name + "\nТелефон: " + tel + "\nДата и время " + date + " " + time + "\n" + "Количество человек: " + num + "\nПочта: " + email
         send_mail('Бронирование', body, email, ["shatbaltic39@gmail.com"], fail_silently=False)
         return render(request, 'success.html')
