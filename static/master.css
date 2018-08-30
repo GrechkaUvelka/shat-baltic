@@ -115,6 +115,7 @@ header div {
     border-radius: 10px;
     padding: 1em;
     color: #FFF1CD;
+    text-align: center;
 }
 
 .about section {
@@ -154,7 +155,6 @@ header div {
 #tab4:checked ~ #content4 {
   display: block;
 }
-
 
 
 .menu_left_column {
@@ -282,3 +282,22 @@ i {
   img {
     width: 45%;
   }
+@media screen and (max-width: 900px) {
+  #tab1:checked ~ #content1,
+  #tab1:checked ~ #content2,
+  #tab1:checked ~ #content3{
+    display: block;
+  }
+  label[for="tab2"],
+  label[for="tab3"] {
+    display: none;
+  }
+  #tab4:checked ~ #content4{
+    display: block;
+  }
+  #tab4:checked ~ #content1,
+                  #content2,
+                  #content3{
+    display: none;
+  }
+}
