@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from django import forms
 from django.core.mail import send_mail, BadHeaderError
@@ -22,3 +23,6 @@ def send(request):
         return render(request, 'success.html')
     else:
         return render(request, "fail.html")
+
+def robots(request):
+    return render_to_response('robots.txt', content_type="text/plain")
